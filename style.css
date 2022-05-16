@@ -34,11 +34,13 @@ article {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 
-.content > p { /*Kun direkte børn */
- color: #72f1b8;
+.content > p {
+  /*Kun direkte børn */
+  color: #72f1b8;
 }
 
-p + figure { /*Kun lige under*/
+p + figure {
+  /*Kun lige under*/
   margin-top: 1rem;
 }
 
