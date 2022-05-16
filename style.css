@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== section ========== */
+section {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+  gap: 1rem;
+
+  padding-block: 4rem;
+  background: #463866;
+}
+
+/* ========== article ========== */
+article {
+  grid-column: 2;
+
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.content > p { /*Kun direkte børn */
+ color: #72f1b8;
+}
+
+p + figure { /*Kun lige under*/
+  margin-top: 1rem;
+}
+
+/* ========== gallery ========== */
+.gallery {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  height: 100%;
+  object-fit: cover;
+}
